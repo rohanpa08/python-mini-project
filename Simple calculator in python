@@ -1,0 +1,26 @@
+# Simple Python Calculator
+
+print("Welcome to the Python Calculator!")
+
+# Take user input
+num1 = float(input("Enter first number: "))
+op = input("Choose an operator (+, -, *, /, %, **): ")
+num2 = float(input("Enter second number: "))
+
+# Perform calculation
+if op == '+':
+    result = num1 + num2
+elif op == '-':
+    result = num1 - num2
+elif op == '*':
+    result = num1 * num2
+elif op == '/':
+    result = num1 / num2
+elif op == '%':
+    result = num1 % num2
+elif op == '**':
+    result = num1 ** num2
+else:
+    result = "Invalid operator"
+
+print("Result:", result)
